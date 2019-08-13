@@ -51,7 +51,7 @@ function Main({ match }){
   return (
     <div className="main-container">
       <Link to="/">
-        <img src={logo} alt="DevsCorner" width="300px" height="40px" />
+        <img src={logo} alt="DevsCorner" />
       </Link>
         {users.length > 0 ? (
           <ul>

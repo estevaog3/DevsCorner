@@ -20,7 +20,7 @@ function Login({ history }){
     return (
         <div className="login-container">
             <form onSubmit={handleSubmit}>
-                <img src={logo} alt="DevsCorner" height="40px"/>
+                <img src={logo} alt="DevsCorner"/>
                 <input
                     placeholder="Digite seu usuário do Github" 
                     value={username}
