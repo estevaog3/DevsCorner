@@ -5,7 +5,7 @@ Minha primeira aplicação web com Node no backend e React no frontend. Este pro
 O DevsCorner é um site para desenvolvedores avaliarem outros desenvolvedores e, 
 quem sabe, encontrar alguém para fazer um _pair programming_ ou apenas trocar uma ideia. 
 Funciona da seguinte maneira: Quando dois programadores curtem um ao outro, ocorre um _match_.
-O site exibe uma mensagem de _match_ para cada desenvolvedor em tempo real, para que eles possam ser felizes em seus projetos juntos.
+O site exibe uma mensagem de _match_ para os desenvolvedores em tempo real, para que eles possam ser felizes em seus projetos juntos.
 
 ### Usage
 
