@@ -21,7 +21,6 @@ function Main({ match }){
       setUsers(response.data);
     }
     loadUsers();          
-
   },[match.params.id]);
 
   useEffect(() => {
@@ -53,42 +52,42 @@ function Main({ match }){
       <Link to="/">
         <img src={logo} alt="DevsCorner" />
       </Link>
-        {users.length > 0 ? (
-          <ul>
-            {users.map(user => (
-              <li key={user._id}>
-                <img src={user.avatarUrl} alt={user.name}/>
-                <footer>
-                  <strong>{user.name}</strong>
-                 <p>{user.bio}</p>
-                </footer>
-                <div className="buttons">
-                  <button type="button" onClick={() => handleLike(user._id)}>
-                    <img src={like} alt="like"/>
-                  </button>
-                  <button type="button" onClick={() => handleDislike(user._id)}>
-                    <img src={dislike} alt="dislike"/>
-                  </button>
-                </div>
-              </li>
-            ))
-            }
-          </ul>
-          ) : (
-          <div className="empty" >Acabou :(</div>
-          )
-        }
-        {
-          matchedDev && (
-            <div className="match-container">
-              <img src={matchImage} alt="It's a match"/>
-              <img className="avatar" src={matchedDev.avatarUrl} alt="Avatar do Dev"/>
-              <strong>{matchedDev.name}</strong>
-              <p>{matchedDev.bio}</p>
-              <button onClick={() => setMatchedDev(null)}>FECHAR</button>
-            </div>
-          )
-        }
+      {users.length > 0 ? (
+        <ul>
+          {users.map(user => (
+            <li key={user._id}>
+              <img src={user.avatarUrl} alt={user.name}/>
+              <footer>
+                <strong>{user.name}</strong>
+                <p>{user.bio}</p>
+              </footer>
+              <div className="buttons">
+                <button type="button" onClick={() => handleLike(user._id)}>
+                  <img src={like} alt="like"/>
+                </button>
+                <button type="button" onClick={() => handleDislike(user._id)}>
+                  <img src={dislike} alt="dislike"/>
+                </button>
+              </div>
+            </li>
+          ))
+          }
+        </ul>
+        ) : (
+        <div className="empty">Acabou :(</div>
+        )
+      }
+      {
+        matchedDev && (
+          <div className="match-container">
+            <img src={matchImage} alt="It's a match"/>
+            <img className="avatar" src={matchedDev.avatarUrl} alt="Avatar do Dev"/>
+            <strong>{matchedDev.name}</strong>
+            <p>{matchedDev.bio}</p>
+            <button onClick={() => setMatchedDev(null)}>FECHAR</button>
+          </div>
+        )
+      }
     </div>
   );
 }
