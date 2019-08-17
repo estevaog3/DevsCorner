@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.main-container a img{
+  max-width: 300px;
+}
+
 .main-container ul{
   list-style: none;
   display: grid;

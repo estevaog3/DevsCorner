@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 import api from '../services/api';
 
 /* propriedade 'history' é herdada de 'react-router-dom', 

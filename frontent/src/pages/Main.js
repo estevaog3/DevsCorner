@@ -4,7 +4,7 @@ import api from '../services/api';
 import { Link } from 'react-router-dom';
 import './Main.css';
 
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 import like from '../images/like.svg';
 import dislike from '../images/dislike.svg';
 import matchImage from '../images/itsamatch.png';
