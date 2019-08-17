@@ -7,22 +7,12 @@ quem sabe, encontrar alguém para fazer um _pair programming_ ou apenas trocar u
 Funciona da seguinte maneira: Quando dois programadores curtem um ao outro, ocorre um _match_.
 O site exibe uma mensagem de _match_ para os desenvolvedores em tempo real, para que eles possam ser felizes em seus projetos juntos.
 
-### Usage
+### How to run
 
-Clone o repositório e mova para o diretório DevsCorner:
+##### Pré-requisitos: `git`, `node`, `npm` e `yarn`.
 
-```
-git clone https://github.com/EstevaoCostaG3/DevsCorner.git
-cd DevsCorner
-```
-Em um terminal inicialize o servidor Node:
-```
-cd backend
-yarn init-server
-```
-Em outro terminal, inicie a aplicação em si:
-```
-cd ../frontend
-yarn start
-```
-Se tudo ocorrer bem, a página de login será aberta no seu navegador. Feito.
+1. Clone o repositório e abra um terminal no diretório do projeto DevsCorner;
+2. Inicialize o servidor Node: `cd backend && yarn init-server`;
+3. Abra outro terminal no diretório do projeto;
+4. Inicie a aplicação web:`cd ../frontend && yarn start`;
+5. Abra a página de login no seu navegador: `http://localhost:3000`.
