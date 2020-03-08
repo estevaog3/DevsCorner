@@ -12,7 +12,7 @@ O site exibe uma mensagem de _match_ para os desenvolvedores em tempo real, para
 ##### Pré-requisitos: `git`, `node`, `npm` e `yarn`.
 
 1. Clone o repositório e abra um terminal no diretório do projeto DevsCorner;
-2. Inicialize o servidor Node: `cd backend && yarn init-server`;
+2. Inicialize o servidor Node localmente: `cd backend && yarn install && yarn init-server`;
 3. Abra outro terminal no diretório do projeto;
-4. Inicie a aplicação web:`cd ../frontend && yarn start`;
+4. Inicie a aplicação web:`cd frontend && yarn install && yarn start`;
 5. Abra a página de login no seu navegador: `http://localhost:3000`.
