@@ -11,7 +11,7 @@ function Login({ history }){
     async function handleSubmit(event){
         event.preventDefault();
         const response = await api.post('/devs', {
-            username
+            'username': username.toLowerCase(),
         });
         const {_id} = response.data;
         history.push(`/dev/${_id}`);
