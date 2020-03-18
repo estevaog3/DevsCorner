@@ -9,10 +9,18 @@ O site exibe uma mensagem de _match_ para os desenvolvedores em tempo real, para
 
 ### How to run
 
-##### Pré-requisitos: `git`, `node`, `npm` e `yarn`.
+##### Pré-requisitos:
+`git`, `node`, `npm`, `yarn` e um banco de dados no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (pode ser criado gratuitamente)
 
 1. Clone o repositório e abra um terminal no diretório do projeto DevsCorner;
-2. Inicialize o servidor Node: `cd backend && yarn init-server`;
-3. Abra outro terminal no diretório do projeto;
-4. Inicie a aplicação web:`cd ../frontend && yarn start`;
-5. Abra a página de login no seu navegador: `http://localhost:3000`.
+
+2. Crie este arquivo para definição de variáveis de ambiente: `touch backend/.env`. Ele deve conter as variáveis a seguir. (Insira os valores correspondentes às credenciais do seu banco de dados MongoDB.)
+```
+DB_USERNAME=<nome de usuário>
+DB_PASSWORD=<senha>
+DB_NAME=<nome do banco de dados>
+```
+3. Inicialize o servidor Node localmente: `cd backend && yarn install && yarn init-server`;
+4. Abra outro terminal no diretório do projeto;
+5. Inicie a aplicação web: `cd frontend && yarn install && yarn start`;
+6. Abra a página de login no seu navegador: `http://localhost:3000`.
